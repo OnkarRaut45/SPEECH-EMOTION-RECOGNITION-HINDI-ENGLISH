@@ -1,0 +1,7 @@
+{
+  "parameters":
+  {
+    "upload_location": "static\\savedFiles",
+    "modelPath": "Models\\modelmlpbycnntrial.h5"
+  }
+}

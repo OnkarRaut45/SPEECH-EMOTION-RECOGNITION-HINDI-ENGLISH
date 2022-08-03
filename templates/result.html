@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Predict</title>
+    <link rel="stylesheet" href="/static/css/result.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Tapestry&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Pacifico&family=Patua+One&family=Poppins:wght@200&family=Roboto:wght@300;900&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <section id="result">
+      <div class="result-box">
+        <form action="/respond" method="post" class="prediction-box">
+          <h1>Predicted Emotion: <span>{{ data }}</span></h1> 
+          <audio src="static\savedFiles\{{ path }}" controls autoplay loop></audio>
+          <input type="submit" class="button" value="Predict Again">
+          <!-- <button type="button" onclick="history.back()">Predict Again</button> -->
+        </form>
+        <!-- <div class="prediction-box">
+          <h1>Predicted Emotion: <span>{{ data }}</span></h1> 
+          <audio src="static\savedFiles\{{ path }}" controls autoplay loop></audio>
+          <button type="button" onclick="history.back()">Predict Again</button>       
+      </div> -->
+      </div>
+    </section>
+  </body>
+</html>
